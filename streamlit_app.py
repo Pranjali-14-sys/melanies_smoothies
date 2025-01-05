@@ -1,7 +1,7 @@
 # Import python packages
-import requests
 import streamlit as st
 from snowflake.snowpark.functions import col
+import requests
 
 # Write directly to the app
 st.title(":cup_with_straw: Customize Your Smoothie :cup_with_straw:")
@@ -24,7 +24,6 @@ ingredients_list = st.multiselect(
 )
 
 if ingredients_list:
-
     ingredients_string = ''
 
     for fruit_chosen in ingredients_list:
